@@ -1,111 +1,223 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-*{box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    position: relative;
-    background-color:  #1CD1B0;
-    height: 38px;
-    margin-top: 0px;
+header {
+    display: flex;
+    flex-direction: column;
+
 }
 
-h1{
-position: relative;
-display: inline-block;
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 47px;
-margin-left: 40px;
+h1 {
+
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    margin-left: 40px;
 }
 
-.cajaHeroes{
-position: absolute;
-width: 100%;
-height: 101px;
-left: 0px;
-top: 38px;
-background-color: #00669F;
-box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+button {
+    display: flex;
+}
+
+.cajaHeroes {
+    /*position: absolute;*/
+    width: 100%;
+    height: 101px;
+    left: 0px;
+    top: 38px;
+    background-color: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    align-items: flex-end;
 }
 
 h4 {
-    position: relative;
-    top: 10px;
-    left: 10px;
+    margin-left: 3rem;
+
 }
 
-
-section {
+.cabezal {
     display: flex;
-    justify-content: space-around;
-    padding-top: 250px;
-    padding-bottom: 500px;
-  
-}
-.tarjeta {
-    width: 300px;
-    position: absolute;
-    top: 293px;
-    left: 32px;
-    box-sizing: border-box;
-    padding: 10px 30px 30px 30px;
-    border-radius: 10px;
-    height: 529px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    left: 2rem;
+    background-color: #1CD1B0;
+    height: 3rem;
 
 }
 
-.tarjeta2 {
-    width: 300px;
-    position: absolute;
-    top: 293px;
-    left: 362px;
-    box-sizing: border-box;
-    padding: 10px 30px 30px 30px;
-    border-radius: 10px;
-    height: 529px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} 
+.botoningreso {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #001D2D;
+    gap: 0.5rem;
+    height: 2rem;
+    align-items: center;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
 
-.tarjeta3 {
-    width: 300px;
-    position: absolute;
-    top: 293px;
-    left: 700px;
-    box-sizing: border-box;
-    padding: 10px 30px 30px 30px;
-    border-radius: 10px;
-    height: 529px;
-    background: #F3F3F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.botonregistro {
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    color: #F3F3F3;
+    font-size:1rem ;
+    background-color: #1CD1B0;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
 
 }
+
+
+
+.formregistro, .formingreso {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 0.2rem;
+    background-color: #1CD1B0;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    color: #F3F3F3;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+legend {
+    color: #001D2D;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.buttonform {
+    background-color: #00669F;
+    color: #F3F3F3;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.ordencards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    position: relative;
+    border-radius: 1rem;
+    background-color: #F3F3F3;
+}
+
+
+.heart {
+    position: absolute;
+    width: 0.5rem;
+    padding: 1rem;
+    z-index: 555;
+}
+
+.imagenfondo {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 1rem;
+}
+
+.imagenperfil {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width: 40%;
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 30%;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    margin-top: 30%;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+
+}
+
+.buttoncard {
+    font-size: 1rem;
+    background-color: #00669F;
+    color: #F3F3F3;
+    border-radius: 00.5rem;
+    width: 40%;
+    border: none;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    display: flex;
+
+
+}
+
+
 
 .fondobatman {
-width: 300px;
-height: 193px;
-left: 32px;
-top: 293px;
-margin-left: -30px;
-margin-top: -50px;
+    width: 300px;
+    height: 193px;
+    left: 32px;
+    top: 293px;
+    margin-left: -30px;
+    margin-top: -50px;
 
 }
 
 .corazon {
-    position:relative;
+    position: relative;
     z-index: 555;
 }
 
+
+
 .batmancara {
-    position: absolute;
+    display: flex;
+    /*position: absolute;*/
+
     border-radius: 60px;
     top: 115px;
     left: 85px;
@@ -113,11 +225,15 @@ margin-top: -50px;
 }
 
 .cuadrodetexto {
-position: absolute;
-top: 250px;
-left: 32px;
-margin-left: -30px;
-padding: 10px;
+    /*position: absolute;*/
+    top: 250px;
+    left: 32px;
+    margin-left: -30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    ;
 
 }
 
@@ -126,29 +242,86 @@ h3 {
 }
 
 .BotonVerMas {
-    position: absolute;
-width: 128.78px;
-height: 48.52px;
-left: 85px;
-top: 460px;
-background-color: #00669F;
-text-align: center;
-color: #F3F3F3;
+    /*position: absolute;*/
+    display: flex;
+
+    width: 128.78px;
+    height: 48.52px;
+    left: 85px;
+    top: 460px;
+    background-color: #00669F;
+    text-align: center;
+    color: #F3F3F3;
 }
 
 
 footer {
-position: absolute;
-width: 100%;
-height: 51px;
-left: 0px;
-top: 972px;
-color: #FFF9F9;
-background: #00669F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    /*position: absolute;*/
+    width: 100%;
+    height: 51px;
+    left: 0px;
+    top: 972px;
+    color: #FFF9F9;
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .textoDelFooter {
-   margin-left: 30px;
-   margin-bottom: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Responsive  mobile */
+@media (max-width: 480px) {
+
+
+    .botoningreso {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .cabezal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .cajaHeroes {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formularios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+
+    }
+
+    .ordencards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

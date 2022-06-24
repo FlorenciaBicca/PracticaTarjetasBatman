@@ -18,77 +18,85 @@
         <div class="cajaHeroes">
             <h1>Heroes</h1>
         </div>
+        <div class="botoningreso">
+            <button class="botonregistro" type="submit" name="Registrarme">Registrate</button>
+            <button class="botonregistro" type="submit" name="Ingresar">Ingresar</BUTton>
+        </div>
     </header>
-
     <main>
-        <section>
-            <!--primera tarjeta-->
-            <article class="tarjeta">
+        <!--formularios-->
+        <section class="formularios">
+            <form class="formregistro" action="registro">
+                <legend>Registrate</legend>
                 <div>
-                    <img src="./img/corazon.png" alt="corazon" class="corazon">
-                    <img src="./img/fondobatman1.png" alt="fondobatman" class="fondobatman">
-                    <span class="cuadrodetexto">
-                        <h3>BATMAN</h3>
-                        <p> Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman,
-                            Detective
-                            Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing
-                        </p>
-                    </span>
+                    <label> Nombre
+                        <input type="text" name="username" required>
+                    </label>
                 </div>
                 <div>
-                    <img src="./img/batmancara.png" alt="batmancara" class="batmancara">
+                    <label> E-mail
+                        <input type="email" name="email" required>
+                    </label>
+                    <br>
+                </div>
+                <div>
+                    <button class="buttonform" type="submit" name="Enviar"> Enviar</button>
+                </div>
+            </form>
 
-                </div>
-                <span class="BotonVerMas">
-                    <p>Ver más</p>
-                </span>
-            </article>
-
-            <!--segunda tarjeta-->
-            <article class="tarjeta2">
+            <form class="formingreso" action="registro">
+                <legend>Ingresar</legend>
                 <div>
-                    <img src="./img/corazon.png" alt="corazon" class="corazon">
-                    <img src="./img/fondo 2.png" alt="fondobatman" class="fondobatman">
-                    <span class="cuadrodetexto">
-                        <h3>Harley Quinn</h3>
-                        <p> La creación de Harley Quinn fue una idea de último minuto propuesta por el escritor
-                            estadounidense Paul Dini para modificar una escena del vigésimo-segundo episodio de Batman:
-                            la serie animada
-                        </p>
-                    </span>
+                    <label> Nombre
+                        <input type="text" name="username" required>
+                    </label>
                 </div>
                 <div>
-                    <img src="./img/chica.png" alt="batmancara" class="batmancara">
-                </div>
-                <span class="BotonVerMas">
-                    <p>Ver más</p>
-                </span>
-            </article>
-
-            <!--tercera tarjeta-->
-            <article class="tarjeta3">
-                <div>
-                    <img src="./img/corazon.png" alt="corazon" class="corazon">
-                    <img src="./img/fondobatman1.png" alt="fondobatman" class="fondobatman">
-                    <span class="cuadrodetexto">
-                        <h3>BATMAN</h3>
-                        <p> Bruce Wayne es el único personaje que se identifica como Batman y aparece en Batman,
-                            Detective
-                            Comics, Batman y Robin, y Batman: The Dark Knight. Dick Grayson vuelve al manto de Nightwing
-                        </p>
-                    </span>
+                    <label> Constraseña
+                        <input type="password" name="clave" required>
+                    </label>
+                    <br>
                 </div>
                 <div>
-                    <img src="./img/batmancara.png" alt="batmancara" class="batmancara">
+                    <button class="buttonform" type="submit" name="Enviar"> Enviar</button>
                 </div>
-                <span class="BotonVerMas">
-                    <p>Ver más</p>
-                </span>
-            </article>
+            </form>
         </section>
+
+        <!--tarjetas-->
+    <div class="ordencards"> 
+
+        <div class="card">
+            <img src="img/corazon.png" alt="like button" class="heart">
+            <img src="img/fondobatman1.png" alt="fondo card de batman" class="imagenfondo">
+            <img src="img/batmancara.png" alt="foto de batman" class="imagenperfil">
+            <h2>Batman</h2>
+            <P>Batman (conocido inicialmente como Bat-Man) es un personaje creado por los estadounidenses Bob Kane y Bill Finger, y propiedad de DC Comics. Apareció por primera vez en la historia titulada «El caso del sindicato químico» de la revista Detective Comics N.º 27, lanzada por la editorial National Publications el 30/3/1939.</P>
+            <button class="buttoncard"> Ver más</button>
+        </div>
+        <div class="card">
+            <img src="img/corazon.png" alt="like button" class="heart">
+            <img src="img/fondo 2.png" alt="fondo card de chica" class="imagenfondo">
+            <img src="img/chica.png" alt="foto de batman" class="imagenperfil">
+            <h2>Harley Quinn</h2>
+            <P>Harley Quinn es un personaje ficticio creado por los estadounidenses Paul Dini y Bruce Timm para la editorial DC Comics. Quinn hizo su debut en el vigésimo-segundo episodio de Batman: la serie animada, «El favor del Joker», en septiembre de 1992 y se convirtió en una villana recurrente en la serie.</P>
+            <button  class="buttoncard">Ver más</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/corazon.png" alt="like button" class="heart">
+            <img src="img/fondobatman1.png" alt="fondo card de batman" class="imagenfondo">
+            <img src="img/batmancara.png" alt="foto de batman" class="imagenperfil">
+            <h2>Batman</h2>
+            <P>Batman (conocido inicialmente como Bat-Man) es un personaje creado por los estadounidenses Bob Kane y Bill Finger, y propiedad de DC Comics. Apareció por primera vez en la historia titulada «El caso del sindicato químico» de la revista Detective Comics N.º 27, lanzada por la editorial National Publications el 30/3/1939.</P>
+            <button  class="buttoncard">Ver más</button>
+        </div>
+
+    </div>
     </main>
     <footer>
         <p class="textoDelFooter">Todos los derechos reservados FRONT END</p>
     </footer>
 </body>
+
 </html>
